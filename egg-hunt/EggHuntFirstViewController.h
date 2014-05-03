@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EggHuntFirstViewController : UIViewController
+@interface EggHuntFirstViewController : UITableViewController
+
+@property(nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end
