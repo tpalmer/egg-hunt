@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -27,7 +27,19 @@
                             <outlet property="delegate" destination="DcG-RA-9vf" id="ejO-ca-Qpe"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Eggs" image="first" id="rBC-5S-VBh"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="OKT-Ar-1Cm">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle">
+                            <fragment content="Refresh">
+                                <attributes>
+                                    <font key="NSFont" metaFont="toolTip"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </refreshControl>
                     <connections>
                         <outlet property="tableView" destination="KSW-UG-7xB" id="wM0-Lm-0bP"/>
                     </connections>
@@ -40,40 +52,17 @@
         <scene sceneID="ot8-2e-RuS">
             <objects>
                 <viewController title="Second" id="QUy-BD-bpt" customClass="EggHuntSecondViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FgS-U6-xeU"/>
-                        <viewControllerLayoutGuide type="bottom" id="stI-4g-hlJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
+                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ffk-X8-vE5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="29h-N2-YGT">
-                                <rect key="frame" x="20" y="158" width="280" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the second view controller — an instance of EggHuntSecondViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DcM-Fx-MKR">
-                                <rect key="frame" x="20" y="240" width="280" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="9fN-Zf-E0i"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="29h-N2-YGT" firstAttribute="leading" secondItem="gMD-aP-Fq6" secondAttribute="leading" constant="20" symbolic="YES" id="4te-rk-9Fp"/>
-                            <constraint firstAttribute="trailing" secondItem="29h-N2-YGT" secondAttribute="trailing" constant="20" symbolic="YES" id="FIx-Zl-RBr"/>
-                            <constraint firstItem="DcM-Fx-MKR" firstAttribute="top" secondItem="29h-N2-YGT" secondAttribute="bottom" constant="40" id="Gb1-a9-eY8"/>
-                            <constraint firstAttribute="trailing" secondItem="DcM-Fx-MKR" secondAttribute="trailing" constant="20" symbolic="YES" id="XTh-ji-q0k"/>
-                            <constraint firstItem="DcM-Fx-MKR" firstAttribute="leading" secondItem="gMD-aP-Fq6" secondAttribute="leading" constant="20" symbolic="YES" id="l9f-S9-V20"/>
-                            <constraint firstAttribute="centerY" secondItem="DcM-Fx-MKR" secondAttribute="centerY" id="lHZ-e8-ii2"/>
-                        </constraints>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Create New Egg">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="addObject" destination="QUy-BD-bpt" eventType="touchUpInside" id="et9-vi-Dmc"/>
+                        </connections>
+                    </button>
                     <tabBarItem key="tabBarItem" title="Map" image="second" id="Z7h-1E-pvt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>

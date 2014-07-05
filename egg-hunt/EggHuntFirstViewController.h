@@ -11,5 +11,8 @@
 @interface EggHuntFirstViewController : UITableViewController
 
 @property(nonatomic, strong) IBOutlet UITableView *tableView;
+@property(nonatomic, strong) NSArray *eggs;
+
+- (void)refreshObjects;
 
 @end

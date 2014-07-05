@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface EggHuntSecondViewController : UIViewController
+@interface EggHuntSecondViewController : UIViewController<MKMapViewDelegate>
+
+- (IBAction)addObject;
+
+- (void)persistNewEggWithLatitude:(NSNumber *)latitude longitude:(NSNumber *)longitude;
 
 @end
