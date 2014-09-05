@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DFE573131F084ACABBBEF54D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D86397809DCE40F6BC5AEAE0 /* libPods.a */; };
+		FB9E603019B92611006A7F45 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9E602F19B92611006A7F45 /* MapKit.framework */; };
 		FBA74C4F1915615800AD8048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74C4E1915615800AD8048 /* Foundation.framework */; };
 		FBA74C511915615800AD8048 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74C501915615800AD8048 /* CoreGraphics.framework */; };
 		FBA74C531915615800AD8048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74C521915615800AD8048 /* UIKit.framework */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		BE8A7741F6014508AB136C6E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D86397809DCE40F6BC5AEAE0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9E602F19B92611006A7F45 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FBA74C4B1915615800AD8048 /* egg-hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "egg-hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA74C4E1915615800AD8048 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBA74C501915615800AD8048 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,6 +78,7 @@
 			files = (
 				FBA74C511915615800AD8048 /* CoreGraphics.framework in Frameworks */,
 				FBA74C531915615800AD8048 /* UIKit.framework in Frameworks */,
+				FB9E603019B92611006A7F45 /* MapKit.framework in Frameworks */,
 				FBA74C4F1915615800AD8048 /* Foundation.framework in Frameworks */,
 				DFE573131F084ACABBBEF54D /* libPods.a in Frameworks */,
 			);
@@ -117,6 +120,7 @@
 		FBA74C4D1915615800AD8048 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB9E602F19B92611006A7F45 /* MapKit.framework */,
 				FBA74C4E1915615800AD8048 /* Foundation.framework */,
 				FBA74C501915615800AD8048 /* CoreGraphics.framework */,
 				FBA74C521915615800AD8048 /* UIKit.framework */,
@@ -242,6 +246,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = dorkHouse;
 				TargetAttributes = {
+					FBA74C4A1915615800AD8048 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					FBA74C6E1915615800AD8048 = {
 						TestTargetID = FBA74C4A1915615800AD8048;
 					};

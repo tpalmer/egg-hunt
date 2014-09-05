@@ -20,8 +20,12 @@
     
     self.navigationItem.rightBarButtonItem = addButton;
     
-    self.eggs = [Egg MR_findAll];
-    [self.tableView reloadData];
+    [self refreshObjects];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self refreshObjects];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,6 +57,7 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"eggCell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
+    
     return cell;
 }
 
