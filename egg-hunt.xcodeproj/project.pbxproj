@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DFE573131F084ACABBBEF54D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D86397809DCE40F6BC5AEAE0 /* libPods.a */; };
 		FB9E603019B92611006A7F45 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9E602F19B92611006A7F45 /* MapKit.framework */; };
+		FB9E603219B950C7006A7F45 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9E603119B950C7006A7F45 /* CoreLocation.framework */; };
+		FB9E603819B95503006A7F45 /* Egg.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9E603719B95503006A7F45 /* Egg.m */; };
 		FBA74C4F1915615800AD8048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74C4E1915615800AD8048 /* Foundation.framework */; };
 		FBA74C511915615800AD8048 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74C501915615800AD8048 /* CoreGraphics.framework */; };
 		FBA74C531915615800AD8048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74C521915615800AD8048 /* UIKit.framework */; };
@@ -25,7 +27,6 @@
 		FBA74C7B1915615800AD8048 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA74C791915615800AD8048 /* InfoPlist.strings */; };
 		FBA74C7D1915615800AD8048 /* egg_huntTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA74C7C1915615800AD8048 /* egg_huntTests.m */; };
 		FBB341631968B13E0081CFE9 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBB341611968B13E0081CFE9 /* CoreDataModel.xcdatamodeld */; };
-		FBB341671968B3290081CFE9 /* Egg.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB341661968B3290081CFE9 /* Egg.m */; };
 		FBB3416A1968B32A0081CFE9 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB341691968B32A0081CFE9 /* Picture.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,9 @@
 		BE8A7741F6014508AB136C6E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D86397809DCE40F6BC5AEAE0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9E602F19B92611006A7F45 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FB9E603119B950C7006A7F45 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FB9E603619B95503006A7F45 /* Egg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Egg.h; path = Models/Egg.h; sourceTree = "<group>"; };
+		FB9E603719B95503006A7F45 /* Egg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Egg.m; path = Models/Egg.m; sourceTree = "<group>"; };
 		FBA74C4B1915615800AD8048 /* egg-hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "egg-hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA74C4E1915615800AD8048 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBA74C501915615800AD8048 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +69,6 @@
 		FBA74C7A1915615800AD8048 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FBA74C7C1915615800AD8048 /* egg_huntTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = egg_huntTests.m; sourceTree = "<group>"; };
 		FBB341621968B13E0081CFE9 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
-		FBB341651968B3290081CFE9 /* Egg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Egg.h; path = Models/Egg.h; sourceTree = "<group>"; };
-		FBB341661968B3290081CFE9 /* Egg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Egg.m; path = Models/Egg.m; sourceTree = "<group>"; };
 		FBB341681968B32A0081CFE9 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Picture.h; path = Models/Picture.h; sourceTree = "<group>"; };
 		FBB341691968B32A0081CFE9 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Picture.m; path = Models/Picture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9E603219B950C7006A7F45 /* CoreLocation.framework in Frameworks */,
 				FBA74C511915615800AD8048 /* CoreGraphics.framework in Frameworks */,
 				FBA74C531915615800AD8048 /* UIKit.framework in Frameworks */,
 				FB9E603019B92611006A7F45 /* MapKit.framework in Frameworks */,
@@ -120,6 +123,7 @@
 		FBA74C4D1915615800AD8048 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB9E603119B950C7006A7F45 /* CoreLocation.framework */,
 				FB9E602F19B92611006A7F45 /* MapKit.framework */,
 				FBA74C4E1915615800AD8048 /* Foundation.framework */,
 				FBA74C501915615800AD8048 /* CoreGraphics.framework */,
@@ -181,10 +185,10 @@
 		FBB341641968B2F00081CFE9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FB9E603619B95503006A7F45 /* Egg.h */,
+				FB9E603719B95503006A7F45 /* Egg.m */,
 				FBB341681968B32A0081CFE9 /* Picture.h */,
 				FBB341691968B32A0081CFE9 /* Picture.m */,
-				FBB341651968B3290081CFE9 /* Egg.h */,
-				FBB341661968B3290081CFE9 /* Egg.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -340,8 +344,8 @@
 				FBB3416A1968B32A0081CFE9 /* Picture.m in Sources */,
 				FBA74C681915615800AD8048 /* EggHuntSecondViewController.m in Sources */,
 				FBA74C5B1915615800AD8048 /* main.m in Sources */,
-				FBB341671968B3290081CFE9 /* Egg.m in Sources */,
 				FBA74C5F1915615800AD8048 /* EggHuntAppDelegate.m in Sources */,
+				FB9E603819B95503006A7F45 /* Egg.m in Sources */,
 				FBB341631968B13E0081CFE9 /* CoreDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

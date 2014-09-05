@@ -11,10 +11,22 @@
 
 @implementation EggHuntSecondViewController
 
+#pragma mark
+#pragma mark View Lifecycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self.locationManager startUpdatingLocation];
 }
 
 - (void)didReceiveMemoryWarning
@@ -23,9 +35,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)addObject
+- (IBAction)addObject
 {
-    [self persistNewEggWithLatitude:@1234 longitude:@5678];
+    [self persistNewEggWithLatitude:[NSNumber numberWithDouble:self.locationManager.location.coordinate.latitude]
+                          longitude:[NSNumber numberWithDouble:self.locationManager.location.coordinate.longitude]];
 }
 
 - (void)persistNewEggWithLatitude:(NSNumber *)latitude longitude:(NSNumber *)longitude
@@ -42,5 +55,22 @@
     // With MagicalRecords 2.0.8 or newer you should use the MR_saveNestedContexts
     [localContext MR_saveToPersistentStoreAndWait];
 }
+
+#pragma mark
+#pragma mark CLLocationManagerDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation *currentLocation = [locations lastObject];
+    
+    MKCoordinateRegion newRegion;
+    newRegion.center.latitude = currentLocation.coordinate.latitude;
+    newRegion.center.longitude = currentLocation.coordinate.longitude;
+    
+    [self.mapView setRegion:newRegion animated:YES];
+}
+
+#pragma mark
+
 
 @end

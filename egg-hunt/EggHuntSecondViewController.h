@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface EggHuntSecondViewController : UIViewController<MKMapViewDelegate>
+@interface EggHuntSecondViewController : UIViewController<MKMapViewDelegate, CLLocationManagerDelegate>
+
+@property(nonatomic, strong) IBOutlet MKMapView *mapView;
+@property(nonatomic, strong) CLLocationManager *locationManager;
 
 - (IBAction)addObject;
 
