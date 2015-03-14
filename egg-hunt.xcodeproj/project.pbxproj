@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE75AEA21AB4DC0E0015C48A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE75AEA11AB4DC0E0015C48A /* AudioToolbox.framework */; };
 		CEB2C7E11AB4B5070029A07C /* EggDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB2C7E01AB4B5070029A07C /* EggDetailViewController.m */; };
 		DFE573131F084ACABBBEF54D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D86397809DCE40F6BC5AEAE0 /* libPods.a */; };
 		F8C88CAE9E017A0870863CE0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D86397809DCE40F6BC5AEAE0 /* libPods.a */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		50A585755B2D00EA11566215 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6652A0D4A67914A3D3ED52E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CE75AEA11AB4DC0E0015C48A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CEB2C7DF1AB4B5070029A07C /* EggDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EggDetailViewController.h; sourceTree = "<group>"; };
 		CEB2C7E01AB4B5070029A07C /* EggDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EggDetailViewController.m; sourceTree = "<group>"; };
 		D86397809DCE40F6BC5AEAE0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE75AEA21AB4DC0E0015C48A /* AudioToolbox.framework in Frameworks */,
 				FB9E603219B950C7006A7F45 /* CoreLocation.framework in Frameworks */,
 				FBA74C511915615800AD8048 /* CoreGraphics.framework in Frameworks */,
 				FBA74C531915615800AD8048 /* UIKit.framework in Frameworks */,
@@ -138,6 +141,7 @@
 		FBA74C4D1915615800AD8048 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE75AEA11AB4DC0E0015C48A /* AudioToolbox.framework */,
 				FB9E603119B950C7006A7F45 /* CoreLocation.framework */,
 				FB9E602F19B92611006A7F45 /* MapKit.framework */,
 				FBA74C4E1915615800AD8048 /* Foundation.framework */,
