@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Egg.h"
 
 @interface EggDetailViewController : UIViewController
+
+@property(nonatomic, strong) Egg *egg;
+@property(nonatomic, weak) IBOutlet UILabel *lattitude;
+@property(nonatomic, weak) IBOutlet UILabel *longitude;
 
 @end

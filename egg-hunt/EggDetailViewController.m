@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.lattitude.text = [NSString stringWithFormat:@"%@", self.egg.latitude];
+    self.longitude.text = [NSString stringWithFormat:@"%@", self.egg.longitude];
 }
 
 - (void)didReceiveMemoryWarning {

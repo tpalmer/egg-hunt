@@ -8,6 +8,7 @@
 
 #import "EggHuntFirstViewController.h"
 #import "Egg.h"
+#import "EggDetailViewController.h"
 
 @implementation EggHuntFirstViewController
 
@@ -65,8 +66,22 @@
 {
     Egg *egg = [self.eggs objectAtIndex:indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"Latitude: %@ Longitude: %@",
-                           [egg valueForKey:@"latitude"],
-                           [egg valueForKey:@"longitude"]];
+                           egg.latitude,
+                           egg.longitude];
+}
+
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"showEggDetail"]) {
+        
+        EggDetailViewController *vc = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        vc.egg = [self.eggs objectAtIndex:indexPath.row];
+    }
 }
 
 @end
