@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DF2B26B5-3516-48CE-B0E4-9AC62ED7172D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>egg-hunt</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>328AB7C426F3DA0FE3321B92D0C7EA456B350146</key>
+		<string>https://github.com/tpalmer/egg-hunt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>egg-hunt.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>328AB7C426F3DA0FE3321B92D0C7EA456B350146</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tpalmer/egg-hunt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>328AB7C426F3DA0FE3321B92D0C7EA456B350146</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>328AB7C426F3DA0FE3321B92D0C7EA456B350146</string>
+			<key>IDESourceControlWCCName</key>
+			<string>egg-hunt</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,3 +1,5 @@
-platform :ios, '7.0'
+link_with ['egg-hunt', 'egg-huntTests']
+
+platform :ios, '8.0'
 
 pod 'MagicalRecord'
