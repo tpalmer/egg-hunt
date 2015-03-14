@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C994C1A32B0BD975F839DF9E"
-               BuildableName = "libPods-MagicalRecord.a"
-               BlueprintName = "Pods-MagicalRecord"
+               BlueprintIdentifier = "0CA18DA148CACECEBA8412FF"
+               BuildableName = "libPods-MKMapViewZoom.a"
+               BlueprintName = "Pods-MKMapViewZoom"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

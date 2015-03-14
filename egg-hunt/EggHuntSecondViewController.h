@@ -11,7 +11,7 @@
 
 @interface EggHuntSecondViewController : UIViewController<MKMapViewDelegate, CLLocationManagerDelegate>
 
-@property(nonatomic, strong) IBOutlet MKMapView *mapView;
+@property(nonatomic, weak) IBOutlet MKMapView *mapView;
 @property(nonatomic, strong) CLLocationManager *locationManager;
 
 - (IBAction)addObject;

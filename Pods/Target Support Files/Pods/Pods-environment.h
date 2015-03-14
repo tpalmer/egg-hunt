@@ -6,6 +6,12 @@
 // project.
 
 
+// MKMapViewZoom
+#define COCOAPODS_POD_AVAILABLE_MKMapViewZoom
+#define COCOAPODS_VERSION_MAJOR_MKMapViewZoom 1
+#define COCOAPODS_VERSION_MINOR_MKMapViewZoom 0
+#define COCOAPODS_VERSION_PATCH_MKMapViewZoom 0
+
 // MagicalRecord
 #define COCOAPODS_POD_AVAILABLE_MagicalRecord
 #define COCOAPODS_VERSION_MAJOR_MagicalRecord 2

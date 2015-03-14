@@ -19,6 +19,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    self.mapView.userTrackingMode = MKUserTrackingModeFollowWithHeading;
+    
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
@@ -60,21 +62,17 @@
     [localContext MR_saveToPersistentStoreAndWait];
 }
 
-#pragma mark
+
 #pragma mark CLLocationManagerDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     CLLocation *currentLocation = [locations lastObject];
     
-    MKCoordinateRegion newRegion;
-    newRegion.center.latitude = currentLocation.coordinate.latitude;
-    newRegion.center.longitude = currentLocation.coordinate.longitude;
-    
-    [self.mapView setRegion:newRegion animated:YES];
+    [self.mapView setCenterCoordinate:currentLocation.coordinate
+                            zoomLevel:28
+                             animated:YES];
 }
-
-#pragma mark
 
 
 @end

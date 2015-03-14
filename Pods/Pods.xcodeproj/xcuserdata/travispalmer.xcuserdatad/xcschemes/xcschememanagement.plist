@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-MKMapViewZoom.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MagicalRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>73103511E7056FEB5A709A32</key>
+		<key>0CA18DA148CACECEBA8412FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7BDC5689B795C45579B88794</key>
+		<key>4E4F25AF074688F89E2AD01B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C994C1A32B0BD975F839DF9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
